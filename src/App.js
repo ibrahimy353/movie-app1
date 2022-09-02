@@ -1,6 +1,8 @@
 import React,{useEffect, useState} from 'react';
 import './App.css';
 import MovieBox from './MovieBox';
+import  'bootstrap/dist/css/bootstrap.min.css';
+
 
 const API_URL="https://api.themoviedb.org/3/movie/popular?api_key=d00edc8e486cd903348d22749de24834";
 function App() {
