@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import './App.css';
-import MovieBox from './MovieBox';
+import MovieBox from './MovieBox.js';
 import  'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -22,11 +22,17 @@ function App() {
 
 
   return (
-    <div>
+    <div className='container'>
+      <div className='grid'>
+
+    
       {movies.map((movieReq)=>
       <MovieBox key={movieReq.id} {...movieReq}/>)}
      
     </div>
+    </div>
+    
+  
   );
 }
 

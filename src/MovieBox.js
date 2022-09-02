@@ -2,10 +2,15 @@ import React from "react";
 const API_IMG="https://image.tmdb.org/t/p/w500"
 const MovieBox =({title, poster_path, vote_avarage,release_date, overview})=>{
     return(
-        <div>
-            <h1>{title}</h1>
-            <img src={API_IMG+poster_path}></img>
-            <p>{overview}</p>
+        <div className="card text-center bg-secondary mb-3">
+            <div className="card-body">
+                <img className="card-img-top" src={API_IMG=poster_path}/>
+                <div className="card-body">
+                    <button type="button" className="btn btn-dark">View More</button>
+                </div>
+            </div>
+        
+
         </div>
     )
 }
