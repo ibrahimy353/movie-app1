@@ -23,6 +23,7 @@ const MovieBox =({title, poster_path, vote_avarage,release_date, overview})=>{
                             <h5>Release Date</h5>
                             <br></br>
                             <h6>Overview</h6>
+                            <p>overview</p>
 
                         </Modal.Body>
 
