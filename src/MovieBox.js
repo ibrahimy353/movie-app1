@@ -1,4 +1,6 @@
+import { Modal } from "react-bootstrap";
 import React from "react";
+
 const API_IMG="https://image.tmdb.org/t/p/w500"
 const MovieBox =({title, poster_path, vote_avarage,release_date, overview})=>{
     return(
@@ -7,6 +9,16 @@ const MovieBox =({title, poster_path, vote_avarage,release_date, overview})=>{
                 <img className="card-img-top" src={API_IMG=poster_path}/>
                 <div className="card-body">
                     <button type="button" className="btn btn-dark">View More</button>
+
+                    <Modal>
+                        <Modal.Header closeButton>
+                            <Modal.Title>
+                                
+                            </Modal.Title>
+                        </Modal.Header>
+
+                    </Modal>
+                
                 </div>
             </div>
         
