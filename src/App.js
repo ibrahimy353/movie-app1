@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react';
 import './App.css';
 import MovieBox from './MovieBox';
 import  'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Navbar } from 'react-bootstrap';
+import { Container, FormControl, Nav, Navbar } from 'react-bootstrap';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
@@ -29,24 +29,39 @@ function App() {
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container fluid>
         <Navbar.Brand href="">Ibra'S MovieDb App</Navbar.Brand>
-        <Navbar.Brand href="">Trending</Navbar.Brand>
-        <NavbarToggle aria-controls="navbarscroll">
+         <Navbar.Brand href="">Trending</Navbar.Brand>
+         <Navbar.Brand href="">Latest</Navbar.Brand>
+          <NavbarToggle aria-controls="navbarscroll">
           
-          <NavbarCollapse id="navbarScroll">
+            <NavbarCollapse id="navbarScroll">
+              <Nav
+               className="me-auto my-2 my-lg-3"
+               style={{maxHeight:'100px'}}
+               navbarScroll>
+              </Nav>
 
-          </NavbarCollapse>
-        </NavbarToggle>
+              <form className="d-flex">
+
+                <FormControl
+                type="search"
+                placeholder="Movie-Search"
+                className='me-2'
+                aria-lable="search"
+                name=""></FormControl>
+              </form>
+
+            </NavbarCollapse>
+          </NavbarToggle>
       </Container>
 
     </Navbar>
-      <div className='container'>
-      <div className='grid'>
-
-    
-      {movies.map((movieReq)=>
-      <MovieBox key={movieReq.id} {...movieReq}/>)}
      
-    </div>
+     
+    <div className='container'>
+      <div className='grid'>
+        {movies.map((movieReq)=>
+        <MovieBox key={movieReq.id} {...movieReq}/>)}
+      </div>
     </div>
     
   </>
