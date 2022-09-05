@@ -1,7 +1,10 @@
 import React,{useEffect, useState} from 'react';
 import './App.css';
-import MovieBox from './MovieBox.js';
+import MovieBox from './MovieBox';
 import  'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Navbar } from 'react-bootstrap';
+import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
+import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
 
 const API_URL="https://api.themoviedb.org/3/movie/popular?api_key=d00edc8e486cd903348d22749de24834";
@@ -12,7 +15,7 @@ function App() {
   useEffect (()=> {
     fetch(API_URL)
     .then((res)=>res.json())
-    .then(data=>{
+    .then(data=>{ 
       console.log(data)
       setMovies(data.results);
     })
@@ -22,7 +25,21 @@ function App() {
 
 
   return (
-    <div className='container'>
+    <>
+    <Navbar bg="dark" expand="lg" variant="dark">
+      <Container fluid>
+        <Navbar.Brand href="">Ibra'S MovieDb App</Navbar.Brand>
+        <Navbar.Brand href="">Trending</Navbar.Brand>
+        <NavbarToggle aria-controls="navbarscroll">
+          
+          <NavbarCollapse id="navbarScroll">
+
+          </NavbarCollapse>
+        </NavbarToggle>
+      </Container>
+
+    </Navbar>
+      <div className='container'>
       <div className='grid'>
 
     
@@ -32,7 +49,7 @@ function App() {
     </div>
     </div>
     
-  
+  </>
   );
 }
 
