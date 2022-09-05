@@ -5,6 +5,7 @@ import  'bootstrap/dist/css/bootstrap.min.css';
 import { Container, FormControl, Nav, Navbar } from 'react-bootstrap';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
+import { Button } from 'bootstrap';
 
 
 const API_URL="https://api.themoviedb.org/3/movie/popular?api_key=d00edc8e486cd903348d22749de24834";
@@ -48,6 +49,7 @@ function App() {
                 className='me-2'
                 aria-lable="search"
                 name=""></FormControl>
+                <Button variant="secondary" type="submit">Search</Button>
               </form>
 
             </NavbarCollapse>
