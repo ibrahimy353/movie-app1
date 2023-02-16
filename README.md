@@ -16,12 +16,12 @@ Link to the demo site: https://trekmovie.onrender.com/
 ## Installing and Deploying the project.
 
 To deploy this project run
-* Clone the project.
+* Cloning the project.
 ```bash
   git clone https://github.com/ibrahimy353/trekmovie.git
 ```
-* Open the coding environment.
-* Open the terminal.
+* Open the coding environment of your choice vscode etc.
+* Open the terminal on your IDE.
 * Inside the terminal run "npm install" - this will copy dependancies from package.json file.
 * Then run..
 ```bash
