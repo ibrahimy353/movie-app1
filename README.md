@@ -15,18 +15,34 @@ Link to the demo site: https://trekmovie.onrender.com/
 
 ## Installing and Deploying the project.
 
-To deploy this project run
-* Cloning the project.
+To install and deploy this project;
+* Open your IDE then from your IDE Terminal start by
+
+Clone the project
+
 ```bash
   git clone https://github.com/ibrahimy353/trekmovie.git
 ```
-* Open the coding environment of your choice vscode etc.
-* Open the terminal on your IDE.
-* Inside the terminal run "npm install" - this will copy dependancies from package.json file.
-* Then run..
+
+Go to the project directory
+
 ```bash
-  npm start
+  cd my-project
 ```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
 * Deployed on render.com.
 
 
