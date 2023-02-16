@@ -18,7 +18,7 @@ Link to the demo site: https://trekmovie.onrender.com/
 To deploy this project run
 * Clone the project.
 ```bash
- * git clone https://github.com/ibrahimy353/trekmovie.git
+  git clone https://github.com/ibrahimy353/trekmovie.git
 ```
 * Open the coding environment.
 * Open the terminal.
